@@ -1,5 +1,5 @@
 # 🌟 Zsh Shell Setup with Oh My Zsh + Starship + Plugins
-
+`git clone https://github.com/kjtakke/linux-terminal.git && bash linux-terminal/install.sh && rm -rf linux-terminal`
 ## 🛠️ Installation
 
 ```bash
