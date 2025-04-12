@@ -95,7 +95,55 @@ wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.3.0/DroidSansM
 unzip DroidSansMono.zip
 source $ZSH/oh-my-zsh.sh
 ```
+`.config/starship.toml`
+```toml
+# ~/.config/starship.toml
 
+format = """
+$username $directory$git_branch$git_status$nodejs$python$time
+$character
+"""
+
+[username]
+show_always = true
+style_user = "bold fg:green"
+format = "[$user]($style)"
+
+[directory]
+style = "bold fg:blue"
+truncation_length = 3
+truncate_to_repo = false
+format = " in [$path]($style) "
+
+[git_branch]
+symbol = "🌿 "
+style = "bold fg:purple"
+format = "on [$symbol$branch]($style) "
+
+[git_status]
+style = "fg:yellow"
+format = "[$all_status]($style)"
+
+[nodejs]
+symbol = "⬢ "
+style = "fg:green"
+format = "via [$symbol$version]($style) "
+
+[python]
+symbol = "🐍 "
+style = "fg:cyan"
+format = "via [$symbol$version]($style) "
+
+[time]
+disabled = false
+time_format = "%H:%M"
+style = "fg:yellow"
+format = " [$time]($style)"
+
+[character]
+success_symbol = "[❯](bold fg:green) "
+error_symbol = "[✗](bold fg:red) "
+```
 
 * * *
 
