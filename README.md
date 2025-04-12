@@ -72,7 +72,6 @@ git clone https://github.com/marlonrichert/zsh-autocomplete.git \
 ```bash
 export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="agnoster"
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting fast-syntax-highlighting zsh-autocomplete)
 
 plugins=(git zsh-autosuggestions fast-syntax-highlighting zsh-syntax-highlighting)
 
